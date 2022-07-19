@@ -28,19 +28,19 @@ public class App extends Application {
 				
 					VBox vbx = new VBox ();
 					// imagen para el logui 
-					Image imagen = new Image(getClass().getResourceAsStream("/Imagenes/im1.png"));
+					Image imagen = new Image(getClass().getResourceAsStream("/Imagenes/Fondo2.png"));
 					ImageView vi = new ImageView(imagen);
 					vi.setPreserveRatio(true);
 					vi.setSmooth(true);
 					vi.setCache(true);
-					vi.setFitHeight(300);
-					vi.setFitWidth(250);
+					vi.setFitHeight(350);
+					vi.setFitWidth(350);
 					vbx.getChildren().add(vi);
-					vbx.setStyle("-fx-background-color: #27AE60");
+					
 					
 					// sentencias para el loguin usuario y contraseña 
 					VBox Vbox = new VBox();
-					Vbox.setStyle("-fx-background-color: #85C1E9");
+					Vbox.setStyle("-fx-background-color:#85C1E9");
 					
 					VBox vbox = new VBox();
 					vbox.setSpacing(40);
