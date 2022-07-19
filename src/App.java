@@ -34,7 +34,7 @@ public class App extends Application {
 					vi.setSmooth(true);
 					vi.setCache(true);
 					vi.setFitHeight(300);
-					vi.setFitWidth(200);
+					vi.setFitWidth(250);
 					vbx.getChildren().add(vi);
 					vbx.setStyle("-fx-background-color: #27AE60");
 					
@@ -101,7 +101,7 @@ public class App extends Application {
 
 					
 					Scene scene = new Scene(root,700,350);
-					primaryStage.setTitle(" WHATSAPP");
+					primaryStage.setTitle(" FIRTSAPP");
 					primaryStage.setScene(scene);
 					primaryStage.show();
 				} catch(Exception e) {
