@@ -33,11 +33,10 @@ public class App extends Application {
 					vi.setPreserveRatio(true);
 					vi.setSmooth(true);
 					vi.setCache(true);
-					vi.setFitHeight(250);
-			        vi.setFitWidth(350);
-			
-                    vbx.setStyle("-fx-background-color: #27AE60 ");
+					vi.setFitHeight(300);
+					vi.setFitWidth(200);
 					vbx.getChildren().add(vi);
+					vbx.setStyle("-fx-background-color: #27AE60");
 					
 					// sentencias para el loguin usuario y contraseña 
 					VBox Vbox = new VBox();
