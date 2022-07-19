@@ -70,7 +70,7 @@ public class App extends Application {
 						if(text.getText().equals("")||(pwr.getText().equals(""))){
 						System.out.println("ingresar los datos");
 					}else {
-						if((text.getText().equals("admin"))&&(pwr.getText().equals("admin"))) {
+						if((text.getText().equals("Admin"))&&(pwr.getText().equals("admin"))) {
 							System.out.println("ingreso acptado :) "); 
 							
 						}else {
