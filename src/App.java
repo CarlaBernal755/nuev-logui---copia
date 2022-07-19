@@ -28,11 +28,15 @@ public class App extends Application {
 				
 					VBox vbx = new VBox ();
 					// imagen para el logui 
-					Image imagen = new Image(getClass().getResourceAsStream("/Imagenes/Fondo.png"));
+					Image imagen = new Image(getClass().getResourceAsStream("/Imagenes/im1.png"));
 					ImageView vi = new ImageView(imagen);
 					vi.setPreserveRatio(true);
 					vi.setSmooth(true);
 					vi.setCache(true);
+					vi.setFitHeight(250);
+			        vi.setFitWidth(350);
+			
+                    vbx.setStyle("-fx-background-color: #27AE60 ");
 					vbx.getChildren().add(vi);
 					
 					// sentencias para el loguin usuario y contraseña 
@@ -66,14 +70,16 @@ public class App extends Application {
 						if(text.getText().equals("")||(pwr.getText().equals(""))){
 						System.out.println("ingresar los datos");
 					}else {
-						if((text.getText().equals("Amanecer"))&&(pwr.getText().equals("admin"))) {
+						if((text.getText().equals("admin"))&&(pwr.getText().equals("admin"))) {
 							System.out.println("ingreso acptado :) "); 
+							
 						}else {
 							System.out.println("Error :( "); 
 						}
 					}
+					
 						}
-				
+						
 					});
 					btn.setStyle("-fx-background-color: orange;");
 					Vbox.getChildren().add(btn);
